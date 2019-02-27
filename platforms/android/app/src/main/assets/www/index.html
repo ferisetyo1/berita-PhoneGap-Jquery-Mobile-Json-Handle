@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Aplikasi Daftar Mahasiswa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.css"/>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/jquery.mobile.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div data-role="page" id="page-one">
+
+      <div data-role="header">
+        <h1>Daftar Berita</h1>
+      </div>
+
+      <div role="main" class="ui-content">
+        <ul id="list-news" data-role="listview" data-inset="true" data-filter="true">
+
+        </ul>
+
+      </div>
+
+    </div>
+    
+    <div data-role="page" id="page-two">
+      <div data-role="header">
+        <h1>Detail Berita</h1>
+      </div>
+
+      <div role="main" class="ui-content">
+        <div data-role="container" class="ui-responsive" id="detailNews">
+            <h2 id="judulBerita">tidak ditemukan data</h2>
+            <p><span id="tgl"></span> | <span id="jam"></span></p>
+            <img id="gambarBerita"src="" style="max-width:100%;">
+            <p id="isiBerita"></p>
+            <p id="lengkap"></p>
+        </div>
+        <br>
+        <a data-role="button" href="index.html" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-l ui-btn-icon-left">Back</a>
+      </div>
+    </div>
+
+    <script src="js/app0.js" type="text/javascript"></script>
+    <script>
+      Application.initApplication();
+    </script>
+  </body>
+</html>
